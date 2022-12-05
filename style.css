@@ -1,0 +1,701 @@
+@font-face {
+    font-family:PM ;
+    src: url(assests/fonts/PermanentMarker-Regular.ttf);
+}
+@font-face {
+  font-family:BebasNeue ;
+  src: url(assests/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family:SecularOne ;
+    src: url(assests/fonts/SecularOne-Regular.ttf);
+}
+@font-face {
+    font-family:AlfaSlabOne ;
+    src: url(assests/fonts/AlfaSlabOne-Regular.ttf);
+}
+@font-face {
+    font-family:Roboto-Medium ;
+    src: url(assests/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family:Roboto-Regular ;
+    src: url(assests/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family:Lexend-Bold ;
+  src: url(assests/fonts/Lexend/Lexend-Bold.ttf);
+}
+@font-face {
+  font-family:Lexend-Regular ;
+  src: url(assests/fonts/Lexend/Lexend-Regular.ttf);
+}
+
+.main_page {
+  height: 100vh;
+  background-image: url(assests/img/background_home_04-01.jpg);
+}
+/* .row.custom_row {
+  padding-top: 120px;
+} */
+/* .row.custom_row { */
+  /* padding-top: 40px; */
+/* } */
+.video_box img {
+    width: 100%;
+}
+.text_box h1 {
+    font-size: 85px;
+    color: #fff;
+    font-family:Lexend-Bold ;
+}
+.button {
+  text-align: right;
+  font-family: Lexend-Regular;
+  padding: 28px 20px;
+  width: 70%;
+  margin: 0 auto;
+}
+.custom-btn {
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  text-decoration: none;
+  font-family: Lexend-Regular;
+  font-size: 22px;
+  background: #fff;
+    color: #12b9a5;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.c-btn{
+    margin-top: 40px;
+}
+.custom-btn:hover{
+  color: #fff;
+}
+
+.button i {
+    margin-left: 11px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.multistep_form {
+  /* max-width: 600px; */
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+}
+.multistep_form .form_top_steps {
+  padding: 15px;
+  /* background-color: #23c8ba; */
+  /* background-image: linear-gradient(-45deg, orangered, orange); */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-weight: 600;
+}
+.multistep_form .form_top_steps::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 4px;
+  width: calc(100% - 30px);
+  transform: translate(-50%, -50%);
+  background-color: #23c8ba;
+}
+.multistep_form .form_top_steps > * {
+  background-color: #fff;
+  width: 200px;
+  height: 48px;
+  /* border-radius: 50%; */
+  display: grid;
+  place-items: center;
+  line-height: 1;
+  z-index: 2;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  font-family: Roboto-Regular;
+}
+.multistep_form .form_top_steps > *.active {
+  color: #fff;
+  background-color: #23c8ba;
+  color: #fff;
+}
+.multistep_form .step_container {
+  display: flex;
+  transition: transform 0.6s cubic-bezier(0.69, 1.21, 0.53, 1.21);
+}
+
+.multistep_form .step_container .form_step {
+  padding: 0 15px;
+  min-width: 100%;
+}
+
+.multistep_form .step_container .form_step .form_head {
+  padding: 10px 0;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* .multistep_form .step_container .form_step .form_body {
+  border-top: 1px solid #0001;
+  border-bottom: 1px solid #0001;
+  padding: 15px 0;
+} */
+
+.multistep_form .step_container .form_step .form_footer {
+  padding: 15px 0;
+  /* display: flex;
+  justify-content: center; */
+  gap: 25px;
+}
+
+.multistep_form .step_container .form_step .form_footer button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  color: #fff;
+  font-family:Roboto-Regular ;
+  /* box-shadow: 0 1px 5px #0001, 0 1px 10px #0001, 0 1px 15px #0001;
+  text-transform: uppercase; */
+}
+
+.multistep_form .step_container .form_step .form_footer button.prev {
+  /* background-color: #008fff; */
+  color: #fff;
+}
+.multistep_form .step_container .form_step .form_footer button.next {
+  background-color: #4fd3c8;
+}
+.multistep_form .step_container .form_step .form_footer button.submit {
+  /* background-image: linear-gradient(45deg, orange, orangered); */
+  border-radius: 6px;
+
+}
+.form_body ul li {
+    /* background: #dddddd4d; */
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #23c8ba;
+}
+
+select.form-select {
+    height: 200px;
+}
+.form_body li {
+    list-style: none;
+}
+.form_body ul li i {
+  background: #23c8ba;
+  color: #fff;
+  padding: 9px;
+  margin: 9px;
+  border-radius: 60%;
+}
+.form_top_steps {
+  width: 75%;
+  margin: 45px auto;
+  border-radius: 6px;
+}
+.text_box span {
+  font-family:AlfaSlabOne ;
+  font-size: 200px;
+  color: #fff;
+}
+.video_box.text_box {
+  margin-top: -150px;
+}
+audio, canvas, progress, video {
+  display: inline-block;
+  height: 400px;
+}
+.form_head {
+  display: flex;
+  justify-content: space-between;
+}
+.one {
+  width: 30%;
+  padding: 40px;
+  margin: 40px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+}
+h4{
+  font-family:Lexend-Bold ;
+}
+.one img {
+  width: 100%;
+}
+.one h4{
+  font-family:Lexend-Bold ;
+}
+a:hover{
+  color: #000 !important;
+}
+.form_footer .name_wrapper h4 {
+  color: #000 !important;
+}
+.form_footer .name_wrapper h4:hover{
+  color: #008fff;
+}
+a{
+  text-decoration: none;
+}
+.form_footer {
+  width: 95%;
+  text-align: right;
+}
+.form_footer.Patient_tab {
+  width: 100%;
+}
+.form_footer.Patient_tab img {
+  width: 330px;
+}
+.main_page::before {
+  content: "";
+  /* background-image: url(assests/img/flare.png); */
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.inner_chest_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.heading_main h1 {
+  font-family: Lexend-Bold;
+  font-size: 60px;
+}
+.heading_main {
+  margin-top: 35px;
+}
+.heading_main h1 span {
+  font-size: 80px;
+  color: #23c8ba;
+}
+.img_chest {
+  padding-top: 30px;
+}
+.heading_main,.img_chest {
+  width: 50%;
+}
+.heading_main {
+  padding: 0 80px;
+}
+.heading_main p {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  line-height: 28px;
+}
+.nav-link {
+  color: #fff;
+  display: block;
+  width: 300px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: #23c8ba;
+}
+.nav-pills .nav-link {
+  background: #ebeeff;
+  margin: 6px;
+  padding: 16px;
+  color: #000;
+  font-family: Lexend-Bold;
+}
+.list_main {
+  display: flex;
+}
+.list_inner {
+  width: 50%;
+}
+
+ul li,ol li{
+  font-family:Roboto-Regular ;
+}
+.list_inner ul li, .list_inner ol li {
+  font-family: Roboto-Regular;
+  margin-bottom: 15px;
+  border-bottom: 1px solid;
+  list-style-type: none;
+}
+ol, ul {
+  padding-left: 0rem;
+}
+.list_inner ol li, .list_inner ul li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.features{
+  padding: 10px;
+}
+.img_chest img {
+  width: 85%;
+}
+.button.inner-button{
+  padding: 8px 20px;
+}
+.button.inner-button a {
+  color: #fff;
+  background: #23c8ba;
+  padding: 10px 30px;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.button.inner-button a i {
+  margin-right: 10px;
+}
+.ds-heading h1 {
+  font-size: 48px;
+}
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+.button a img {
+  width: 200px;
+}
+.logo img {
+  width: 16%;
+}
+.logo {
+  /* border: 1px solid; */
+  text-align: left;
+}
+.form_footer.custom_next .next {
+  position: absolute;
+  left: 195%;
+  top: 355px;
+}
+.form_footer.custom_next button{
+  color: #fff;
+}
+.multise {
+    display: flex;
+}
+.inner_list {
+  width: 500px;
+  margin: 10px;
+}
+.tab {
+  margin-bottom: 50px;
+}
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+
+.form_body.last_step {
+  width: 90%;
+}
+.last_step{
+  text-align: center;
+  width:100%
+}
+.last_step h4{
+  text-align: center;
+}
+.main_bio {
+  display: flex;
+  width: 100%;
+  margin-bottom: 65px;
+}
+.symtoms ul {
+  display: block;
+  width: 50%;
+  margin-left: 10px;
+}
+.symtoms {
+  display: flex;
+  justify-content: center;
+}
+.bio {
+  width: 33.33%;
+  margin: 20px;
+}
+.bio ul li {
+  background: #dddddd4d;
+}
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  padding: 15px;
+  border: none;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  font-family: Roboto-Regular;
+  outline:none;
+}
+.form-check{
+  background: #dddddd4d;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #23c8ba;
+}
+.form-check .form-check-input {
+  float: left;
+  margin-left: 0em;
+  margin-right: 20px;
+}
+input:focus{
+  outline:none;
+}
+label {
+  display: inline-block;
+  font-family: Roboto-Regular;
+  font-size: 17px;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  box-shadow: none;
+  border: 1px solid red;
+  }
+  .form-check-input:checked[type=radio] {
+    background-image: url(assests/img/dot.png);
+}
+.form-check-input:checked {
+    border: 1px solid transparent;
+    background-color: #23c8ba;
+    }
+input::placeholder {
+    color: #dbd8d8c7;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button,.form_footer.last_step a {
+  background-color: #23c8ba;
+  color: #ffffff;
+  border: none;
+  padding: 10px 50px;
+  font-size: 17px;
+  font-family:Lexend-Bold ;
+  cursor: pointer;
+}
+.form_footer.last_step a:hover{
+  color:#fff !important;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.form_footer.last_step a {
+  padding: 16px;
+  margin-top: 25px;
+}
+#prevBtn {
+  background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #04AA6D;
+}
+.form_body {
+    width: 40%;
+    margin: 30px auto;
+    
+}
+
+/* checkbox  */
+output {
+  display: block;
+}
+h4.vi {
+  color: #1a1818;
+  /* background: #23c8ba; */
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  font-family:Lexend-Bold ;
+  text-align: center;
+}
+
+.form_body.last_step.thanksyou {
+  width: 90%;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.thankyou_main {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 42px;
+}
+.img {
+  text-align: center;
+}
+.img img{
+  width: 50%;
+}
+
+.thankyou_main h1 {
+  font-family: Lexend-Bold;
+  font-size: 60px;
+  margin-top: -54px;
+}
+.thankyou_main span {
+  font-family: Roboto-Regular;
+  font-size: 36px;
+  /* font-family: AlfaSlabOne; */
+  font-weight: bold;
+  line-height: 0px;
+}
+.finalThanks {
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.tab h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  background: #23c8ba;
+  padding: 10px;
+  color: #fff;
+  font-family:BebasNeue ;
+}
+.form_body {
+  width: 50%;
+  margin: 30px auto;
+  /* border: 1px solid; */
+  padding: 20px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+}
+.img_box1 {
+  position: absolute;
+  width: 24%;
+  left: 100%;
+  top: 33px;
+  text-align: center;
+}
+
+.img_wrapper1 img {
+  width: 100%;
+}
+.form_footer.last_step.info_correct .form_footer {
+  text-align: center;
+}
+.more_stories a{
+  border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: #fff;
+    font-family: Roboto-Regular;
+}
+.form_footer.last_step.more_stories button {
+  margin-left: 21px;
+  margin-top: 23px;
+}
+@media screen and (max-width:1366px) {
+  audio, canvas, progress, video {
+    height: 300px;
+}
+.main_page {
+  height: 100%;
+}
+.text_box h1 {
+  font-size: 60px;
+
+}
+.form_footer.Patient_tab img {
+  width: 248px;
+}
+.multistep_form {
+ 
+  height: 700px;
+}
+.form_body {
+  width: 50%;
+  margin: -3px auto
+}
+.form_footer.custom_next .next {
+  top: 288px;
+}
+.multistep_form .form_top_steps > * {
+  background-color: #fff;
+  width: 150px;
+  height: 48px;
+}
+form.multistep_form.step_container.final_steps_from {
+  height: 150px;
+}
+.step_con .last_step {
+  text-align: center;
+  width: 100%;
+  margin-top: 45px;
+}
+}
+
+@media screen and (max-width:1400px) {
+  .form_footer.Patient_tab img {
+    width: 278px !important;
+    margin-top: -30px;
+}
+  
+}
+@media screen and (max-width:1280px) {
+  .form_footer.Patient_tab img {
+    width: 250px !important;
+    margin-top: -30px;
+}
+.text_box span {
+  font-size: 167px;
+}
+.main_page{
+  height: auto;
+}
+  
+}
